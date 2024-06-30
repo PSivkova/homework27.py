@@ -7,16 +7,8 @@
 # Выходные данные
 # [1, 25, 49, 121, 1225, 7921]
 
-def func(x):
-    return x ** 2
-
-
-def fil(x):
-    return x % 2
-
-
 a = [1, 2, 5, 7, 12, 11, 35, 4, 89, 10]
 
-b = map(func, a)
-result = filter(fil, b)
+b = map(lambda x: x ** 2, a)
+result = filter(lambda x: x % 2, b)
 print(list(result))
